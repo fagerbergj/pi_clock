@@ -8,4 +8,4 @@ GOALS
 
 RESOURCES
     1. Google APIs
-    2. tkiner
+    2. tkinter
