@@ -2,7 +2,7 @@ import tkinter as tk
 
 LARGE_FONT = ("Verdana", 12)
 
-class StartPage(tk.Frame):
+class PageOne(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -13,9 +13,9 @@ class StartPage(tk.Frame):
 
         ## buttons in place of swipe for now
         button1 = tk.Button(self, text = "Calender", 
-            command= lambda: controller.show_frame("Page 2"))
+            command= lambda: controller.show_frame(2))
         button1.pack()
 
         button2 = tk.Button(self, text = "Gmail", 
-            command= lambda: controller.show_frame("Page 3"))
+            command= lambda: controller.show_frame(3))
         button2.pack()

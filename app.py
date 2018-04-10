@@ -1,5 +1,5 @@
 import tkinter as tk
-from start_page import StartPage
+from page_1 import PageOne
 from page_2 import PageTwo
 from page_3 import PageThree
 
@@ -18,19 +18,15 @@ class App(tk.Tk):
         self.frames = {}
 
         i = 1
-        for F in (StartPage, PageTwo, PageThree):
-            key = "Page " + str(i)
+        for F in (PageOne, PageTwo, PageThree):
+            key = i
             frame = F(container, self) 
             self.frames[key] = frame
             frame.grid(row = 0, column = 0, sticky = "nsew")
             i += 1
 
-        self.show_frame("Page 1")
+        self.show_frame(1)
 
     def show_frame(self, key):
         frame = self.frames[key]
         frame.tkraise()
-
-
-app = App()
-app.mainloop()

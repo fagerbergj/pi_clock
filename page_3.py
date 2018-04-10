@@ -13,9 +13,9 @@ class PageThree(tk.Frame):
 
         ## buttons in place of swipe for now
         button1 = tk.Button(self, text = "Time/Weather", 
-             command= lambda: controller.show_frame("Page 1"))
+             command= lambda: controller.show_frame(1))
         button1.pack()
 
         button2 = tk.Button(self, text = "Calender", 
-             command= lambda: controller.show_frame("Page 2"))
+             command= lambda: controller.show_frame(2))
         button2.pack()
