@@ -9,6 +9,7 @@ class PageThree(tk.Frame):
 
         ## calender here
         label = tk.Label(self, text = "GMail", font = LARGE_FONT)
+        label.config(fg='white', bg='black')
         label.pack(pady = 10, padx = 10)
 
         ## buttons in place of swipe for now

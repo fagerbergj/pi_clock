@@ -20,7 +20,8 @@ class App(tk.Tk):
         i = 1
         for F in (PageOne, PageTwo, PageThree):
             key = i
-            frame = F(container, self) 
+            frame = F(container, self)
+            frame.config(background='black')
             self.frames[key] = frame
             frame.grid(row = 0, column = 0, sticky = "nsew")
             i += 1
