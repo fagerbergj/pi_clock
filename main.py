@@ -5,7 +5,8 @@ class FullScreenApp(object):
     def __init__(self, master, **kwargs):
         self.master=master
         self.master.attributes("-fullscreen", True)
-        root.attributes("-topmost", True)
+        self.master.attributes("-topmost", True)
+        self.master.configure(background='black')
         self.master.bind('<Escape>',self.resize)   
 
     def resize(self,event):
